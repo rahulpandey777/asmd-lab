@@ -1,5 +1,4 @@
-/* Content in this review preview has not been committed to GitHub.
-   Add confirmed news entries to news below; examples and LinkedIn fields are in README.md. */
+/* Shared ASMD Lab content. Updated using the content editor. */
 window.LAB_CONTENT = {
   "updated": "2026-10-08",
   "profiles": [
@@ -130,7 +129,7 @@ window.LAB_CONTENT = {
         "antimony chalcogenides",
         "bandgap engineering",
         "non-toxic thin-film solar cells",
-        "Sb<sub>2</sub>S<sub>3</sub>/Sb<sub>2</sub>Se<sub>3</sub> double absorber",
+        "Sb\u003csub>2\u003c/sub>S\u003csub>3\u003c/sub>/Sb\u003csub>2\u003c/sub>Se\u003csub>3\u003c/sub> double absorber",
         "SCAPS-1D simulation"
       ],
       "sourceRow": 216
@@ -253,8 +252,8 @@ window.LAB_CONTENT = {
       "authorAffiliation": "Pandey R., Department of Applied Sciences (Physics), National Institute of Technology (NIT), Delhi, 110036, India",
       "url": "https://www.scopus.com/pages/publications/105034319010?origin=resultslist",
       "tags": [
-        "Cs<sub>2</sub>AgGaBr<sub>6</sub>",
-        "Cs<sub>2</sub>AgInBr<sub>6</sub>",
+        "Cs\u003csub>2\u003c/sub>AgGaBr\u003csub>6\u003c/sub>",
+        "Cs\u003csub>2\u003c/sub>AgInBr\u003csub>6\u003c/sub>",
         "ETL and HTL",
         "SCAPS-1D",
         "Underwater"
@@ -278,7 +277,7 @@ window.LAB_CONTENT = {
       "authorAffiliation": "Pandey R., Department of Applied Sciences (Physics), National Institute of Technology (NIT), Delhi, 110036, India",
       "url": "https://www.scopus.com/pages/publications/105044425401?origin=resultslist",
       "tags": [
-        "Cs<sub>2</sub>TiF<sub>6</sub>",
+        "Cs\u003csub>2\u003c/sub>TiF\u003csub>6\u003c/sub>",
         "Dion-Jacobson",
         "SCAPS-1D",
         "Underwater"
@@ -302,7 +301,7 @@ window.LAB_CONTENT = {
       "authorAffiliation": "Pandey R., Department of Applied Sciences (Physics), National Institute of Technology Delhi, New Delhi, India",
       "url": "https://www.scopus.com/pages/publications/105046587558?origin=resultslist",
       "tags": [
-        "(i-CsGeI<sub>3</sub>)",
+        "(i-CsGeI\u003csub>3\u003c/sub>)",
         "intrinsic absorber layer",
         "PSC",
         "SCAPS-1D",
@@ -356,9 +355,9 @@ window.LAB_CONTENT = {
       "tags": [
         "carboost",
         "double absorber efficiency optimisation",
-        "FASnI<sub>3</sub>",
+        "FASnI\u003csub>3\u003c/sub>",
         "machine learning",
-        "MASnI<sub>3</sub>",
+        "MASnI\u003csub>3\u003c/sub>",
         "perovskite solar cell",
         "random forest",
         "supported vector regression",
@@ -385,7 +384,7 @@ window.LAB_CONTENT = {
       "tags": [
         "Albedo effect",
         "Bifacial solar cells",
-        "KGeCl<sub>3</sub>",
+        "KGeCl\u003csub>3\u003c/sub>",
         "PCE and Nyquist"
       ],
       "sourceRow": 105
@@ -435,7 +434,7 @@ window.LAB_CONTENT = {
       "tags": [
         "EIS analysis",
         "Interface defects",
-        "MoX<sub>2</sub> solar cells",
+        "MoX\u003csub>2\u003c/sub> solar cells",
         "Photovoltaic performance",
         "SCAPS-1D simulation"
       ],
@@ -483,7 +482,7 @@ window.LAB_CONTENT = {
       "authorAffiliation": "Pandey R., National Institute of Technology Delhi, Department of Applied Sciences (Physics), Delhi, 110036, India",
       "url": "https://www.scopus.com/pages/publications/105039327176?origin=resultslist",
       "tags": [
-        "Cs<sub>2</sub>AlBiCl<sub>6</sub>",
+        "Cs\u003csub>2\u003c/sub>AlBiCl\u003csub>6\u003c/sub>",
         "current-density characteristics (J-V)",
         "double perovskite material",
         "perovskite solar cell (PSC)",
@@ -537,7 +536,7 @@ window.LAB_CONTENT = {
         "Grading",
         "Group IV",
         "Si",
-        "Si<sub>(1-x)</sub>Ge<sub>(x)</sub>",
+        "Si\u003csub>(1-x)\u003c/sub>Ge\u003csub>(x)\u003c/sub>",
         "Solar cells"
       ],
       "sourceRow": 273
@@ -559,8 +558,8 @@ window.LAB_CONTENT = {
       "authorAffiliation": "Pandey R., Department of Applied Sciences (Physics), National Institute of Technology Delhi, Delhi, India",
       "url": "https://www.scopus.com/pages/publications/105041294105?origin=resultslist",
       "tags": [
-        "Cs<sub>2</sub>CuBiCl<sub>6</sub>",
-        "Cs<sub>2</sub>TiI<sub>6</sub>",
+        "Cs\u003csub>2\u003c/sub>CuBiCl\u003csub>6\u003c/sub>",
+        "Cs\u003csub>2\u003c/sub>TiI\u003csub>6\u003c/sub>",
         "ETL and HTL",
         "SCAPS-1D",
         "underwater"
@@ -660,7 +659,7 @@ window.LAB_CONTENT = {
       "url": "https://www.scopus.com/pages/publications/105027728448?origin=resultslist",
       "tags": [
         "Auger recombination",
-        "Group 4,Si<sub>1-x-y</sub>Ge<sub>y</sub>Sn<sub>x</sub>",
+        "Group 4,Si\u003csub>1-x-y\u003c/sub>Ge\u003csub>y\u003c/sub>Sn\u003csub>x\u003c/sub>",
         "Radiative recombination",
         "Series resistance",
         "Shunt resistance"
@@ -684,7 +683,7 @@ window.LAB_CONTENT = {
       "authorAffiliation": "Pandey R., Department of Applied Sciences (Physics), National Institute of Technology Delhi, Delhi, India",
       "url": "https://www.scopus.com/pages/publications/105044015691?origin=resultslist",
       "tags": [
-        "Ba(Zr, Ti)S<sub>3</sub> absorber",
+        "Ba(Zr, Ti)S\u003csub>3\u003c/sub> absorber",
         "bandgap grading",
         "bowing factor variation",
         "double absorber architecture",
@@ -761,7 +760,7 @@ window.LAB_CONTENT = {
       "url": "https://www.scopus.com/pages/publications/105040581247?origin=resultslist",
       "tags": [
         "2D Perovskites",
-        "MgF<sub>2</sub>",
+        "MgF\u003csub>2\u003c/sub>",
         "Optical Loss Reduction",
         "Perovskite Solar Cells",
         "Texturing"
@@ -785,8 +784,8 @@ window.LAB_CONTENT = {
       "authorAffiliation": "Pandey R., Department of Applied Sciences (Physics), National Institute of Technology Delhi, New Delhi, 110036, India",
       "url": "https://www.scopus.com/pages/publications/105014817544?origin=resultslist",
       "tags": [
-        "FA<sub>0.7</sub>MA<sub>0.3</sub>Pb<sub>0.5</sub>Sn<sub>0.5</sub>I<sub>3</sub>, FA<sub>0.7</sub>Cs<sub>0.3</sub>Pb(I<sub>0.85</sub>Br<sub>0.14</sub>)<sub>3</sub>, SCAPS-1D",
-        "FA<sub>0.8</sub>Cs<sub>0.2</sub>Pb(I<sub>0.6</sub>Br<sub>0.4</sub>)<sub>3</sub>",
+        "FA\u003csub>0.7\u003c/sub>MA\u003csub>0.3\u003c/sub>Pb\u003csub>0.5\u003c/sub>Sn\u003csub>0.5\u003c/sub>I\u003csub>3\u003c/sub>, FA\u003csub>0.7\u003c/sub>Cs\u003csub>0.3\u003c/sub>Pb(I\u003csub>0.85\u003c/sub>Br\u003csub>0.14\u003c/sub>)\u003csub>3\u003c/sub>, SCAPS-1D",
+        "FA\u003csub>0.8\u003c/sub>Cs\u003csub>0.2\u003c/sub>Pb(I\u003csub>0.6\u003c/sub>Br\u003csub>0.4\u003c/sub>)\u003csub>3\u003c/sub>",
         "Tandem solar cell"
       ],
       "sourceRow": 55
@@ -981,13 +980,13 @@ window.LAB_CONTENT = {
       "url": "https://www.scopus.com/pages/publications/105009000063?origin=resultslist",
       "tags": [
         "Composition",
-        "Cu<sub>2</sub>O",
+        "Cu\u003csub>2\u003c/sub>O",
         "Group IV",
         "PCE",
-        "Si<sub>1-x-y</sub>Ge<sub>y</sub>Sn<sub>x</sub>",
+        "Si\u003csub>1-x-y\u003c/sub>Ge\u003csub>y\u003c/sub>Sn\u003csub>x\u003c/sub>",
         "Solar cell",
         "Ternary alloy",
-        "WS<sub>2</sub>"
+        "WS\u003csub>2\u003c/sub>"
       ],
       "sourceRow": 256
     },
@@ -1086,10 +1085,10 @@ window.LAB_CONTENT = {
         "BSF",
         "Chalcogenide",
         "Double absorber",
-        "Sb<sub>2</sub>S<sub>3</sub>",
-        "Sb<sub>2</sub>Se<sub>3</sub>",
-        "WS<sub>2</sub>",
-        "WSe<sub>2</sub>"
+        "Sb\u003csub>2\u003c/sub>S\u003csub>3\u003c/sub>",
+        "Sb\u003csub>2\u003c/sub>Se\u003csub>3\u003c/sub>",
+        "WS\u003csub>2\u003c/sub>",
+        "WSe\u003csub>2\u003c/sub>"
       ],
       "sourceRow": 5
     },
@@ -1259,9 +1258,9 @@ window.LAB_CONTENT = {
       "url": "https://www.scopus.com/pages/publications/105002563996?origin=resultslist",
       "tags": [
         "Double absorber solar cell",
-        "FASnI<sub>3</sub>",
+        "FASnI\u003csub>3\u003c/sub>",
         "Lead-free perovskites",
-        "MASnI<sub>3</sub>",
+        "MASnI\u003csub>3\u003c/sub>",
         "Photovoltaic efficiency optimization"
       ],
       "sourceRow": 83
@@ -1439,6 +1438,13 @@ window.LAB_CONTENT = {
       "dateBasis": "Event dates where explicitly stated; exact LinkedIn publication date not claimed.",
       "image": "assets/linkedin-news-7451164281997271040.jpg",
       "imageAlt": "Image accompanying the LinkedIn post: IGZO thin-film transistor reliability for wearable biosensing"
+    },
+    {
+      "source": "linkedin",
+      "linkedinUrl": "https://lnkd.in/p/gDVvVCE6",
+      "linkedinEmbedUrl": "https://www.linkedin.com/embed/feed/update/urn:li:share:7495872598157799424",
+      "embedHeight": 1069,
+      "displayOrder": -1
     }
   ],
   "events": [],
