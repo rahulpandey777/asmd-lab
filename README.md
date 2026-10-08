@@ -11,7 +11,8 @@ The compact homepage contains the lab introduction, researcher profile links, a 
 
 - Clickable researcher badges for Scopus, Web of Science, ResearchGate, LinkedIn, Google Scholar and ORCID.
 - Publications restricted to entries explicitly marked as carrying NIT Delhi affiliation, with keyword/year/type filters, clickable DOI links, citation copying and BibTeX download.
-- Present and past people, organised as UG, PG, PhD and Post-Doc.
+- Present and past people, organised as UG, PG, PhD and Post-Doc, plus a separate institutional collaborators section.
+- Dr. Rikmantra Basu is listed as an institutional collaborator as confirmed by Dr. Rahul Pandey; his designation, department and research themes come from his official faculty profile.
 - News, dated event filters, project summaries, gallery categories and an accessible image viewer.
 - Research themes, methods, contact information and a Join the lab section.
 - Light-blue design aligned with the lab's door-sign identity; layouts for phones and desktops.
@@ -79,6 +80,7 @@ Use empty strings or omit optional fields. Keep research collection records sepa
 
 - https://faculty.nitdelhi.ac.in/RahulPandey/profile
 - https://faculty.nitdelhi.ac.in/RahulPandey/research
+- https://faculty.nitdelhi.ac.in/RikmantraBasu/profile
 - https://nitdelhi.irins.org/profile/245694
 - https://www.researchgate.net/profile/Rahul-Pandey-3
 
