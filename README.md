@@ -7,6 +7,8 @@ Lab In-charge: Dr. Rahul Pandey, Assistant Professor, Department of Applied Scie
 
 Eight responsive pages: Home, Research, Publications, People, News, Events, Gallery and Contact.
 
+The compact homepage contains the lab introduction, researcher profile links, a linked dashboard, one latest news item, the nearest upcoming event and contact access. Detailed content lives on its own pages. Dashboard totals are computed from confirmed content records; unpopulated collections show an em dash rather than an invented lab total.
+
 - Clickable researcher badges for Scopus, Web of Science, ResearchGate, LinkedIn, Google Scholar and ORCID.
 - Publications restricted to entries explicitly marked as carrying NIT Delhi affiliation, with keyword/year/type filters, clickable DOI links, citation copying and BibTeX download.
 - Present and past people, organised as UG, PG, PhD and Post-Doc.
