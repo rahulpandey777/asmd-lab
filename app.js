@@ -52,13 +52,62 @@
  function renderNews(target,items,total){if(!target)return;target.replaceChildren();if(!items.length){empty(target,total?'No matching news':'Updates coming soon',total?'Try another source, topic or search keyword.':'Lab announcements and selected research posts from LinkedIn will appear here.');return;}items.forEach(n=>{const article=el('article',null,'update news-entry'),time=el('time',n.dateLabel||formatDate(n.date));if(/^\d{4}-\d{2}-\d{2}$/.test(n.date||''))time.dateTime=n.date;const post=linkedinURL(n.linkedinUrl)||linkedinURL(n.url),embed=linkedinURL(n.linkedinEmbedUrl,{embed:true}),body=el('div'),meta=el('div',null,'news-meta'),source=newsSource(n);meta.append(el('span',source==='linkedin'?'LinkedIn':'Lab news'));if(n.category||source==='manual')meta.append(el('span',n.category||'Announcements'));body.append(meta,el('h3',n.title||(source==='linkedin'?'LinkedIn post':'Lab news')));if(n.sourceAuthor)body.append(el('p','Original post: '+n.sourceAuthor+(n.sharedBy?' · Shared by '+n.sharedBy:''),'news-attribution'));
  if(embed&&previewMode){body.append(postCard(n,post||embed));}else if(embed){const visibleSummary=el('p',n.summary,'embed-visible-summary');if(n.summary)body.append(visibleSummary);const frameWrap=el('div',null,'linkedin-embed'),frame=el('iframe');frame.src=embed;frame.title=n.title?'LinkedIn full post: '+n.title:'LinkedIn post';frame.loading='lazy';frame.height=String(Math.min(2400,Math.max(380,Number(n.embedHeight)||1000)));frame.setAttribute('allowfullscreen','');frameWrap.append(frame);body.append(frameWrap);const toggle=el('button','Hide embedded post','embed-visibility');toggle.type='button';toggle.setAttribute('aria-expanded','true');toggle.addEventListener('click',()=>{frameWrap.hidden=!frameWrap.hidden;toggle.textContent=frameWrap.hidden?'Show embedded post':'Hide embedded post';toggle.setAttribute('aria-expanded',String(!frameWrap.hidden));});body.append(toggle);}else{if(n.summary)body.append(el('p',n.summary));if(n.image&&safeURL(n.image,{relative:true})){const image=el('img');image.src=n.image;image.alt=n.imageAlt||n.title||'LinkedIn post image';image.loading='lazy';body.append(image);}}
  const actions=el('div',null,'news-links');if(post)actions.append(link('View on LinkedIn ↗',post,'text-link'));if(n.url&&safeURL(n.url)&&n.url!==post)actions.append(link('Read more ↗',n.url,'text-link'));if(!post&&embed)actions.append(link('Open LinkedIn post ↗',embed,'text-link'));if(actions.children.length)body.append(actions);article.append(time,body);target.append(article);});}
- function updates(target,items,kind){if(!target)return;target.replaceChildren();if(!items.length){empty(target,kind==='news'?'Updates coming soon':'Events will be announced here',kind==='news'?'Research updates, achievements and announcements will appear here.':'Details of workshops, seminars and other research events will be added here.');return;}items.forEach(n=>{const a=el('article',null,'update'),time=el('time',n.dateLabel||formatDate(n.date));if(/^\d{4}-\d{2}-\d{2}$/.test(n.date||''))time.dateTime=n.date;a.append(time);const body=el('div');body.append(el('h3',n.title),el('p',n.summary));if(n.venue)body.append(el('p',n.venue));if(n.image&&safeURL(n.image,{relative:true})){const img=el('img');img.src=n.image;img.alt=n.imageAlt||n.title;img.loading='lazy';body.append(img);}if(n.url&&safeURL(n.url))body.append(link(kind==='news'?'Read more ↗':'Event details ↗',n.url,'text-link'));a.append(body);target.append(a);});}
+ function renderEvents(target,items){
+  if(!target)return;
+  target.replaceChildren();
+  if(!items.length){empty(target,'No events in this category','Choose All events or Past events to browse the workshop archive.');return;}
+  items.forEach(n=>{
+   const article=el('article',null,'update event-entry'),time=el('time',n.dateLabel||formatDate(n.date));
+   if(n.id&&/^[a-z0-9-]+$/.test(n.id))article.id=n.id;
+   if(/^\d{4}-\d{2}-\d{2}$/.test(n.date||''))time.dateTime=n.date;
+   article.append(time);
+   const body=el('div',null,'event-body'),layout=el('div',null,'event-layout'),info=el('div',null,'event-info');
+   if(n.category)info.append(el('p',n.category,'eyebrow'));
+   info.append(el('h3',n.title));
+   if(n.summary)info.append(el('p',n.summary));
+   const meta=el('dl',null,'event-meta');
+   [['Location',n.venue],['Coordinator(s)',n.coordinators],['Organized by',n.organizedBy]].forEach(([label,value])=>{if(value){meta.append(el('dt',label),el('dd',value));}});
+   if(meta.children.length)info.append(meta);
+   const actions=el('div',null,'event-actions');
+   if(n.url&&safeURL(n.url))actions.append(link(n.urlLabel||'Event details ↗',n.url,'text-link'));
+   if(n.image&&safeURL(n.image,{relative:true}))actions.append(link('View event poster ↗',n.image,'text-link'));
+   if(actions.children.length)info.append(actions);
+   layout.append(info);
+   if(n.image&&safeURL(n.image,{relative:true})){
+    const poster=link('',n.image,'event-poster'),img=el('img');
+    poster.setAttribute('aria-label','View poster for '+n.title+' (opens in a new tab)');
+    img.src=n.image;img.alt=n.imageAlt||n.title;img.loading='lazy';img.decoding='async';
+    poster.append(img);layout.append(poster);
+   }
+   body.append(layout);
+   const paragraphs=Array.isArray(n.overview)?n.overview:typeof n.overview==='string'?[n.overview]:[],photos=Array.isArray(n.photos)?n.photos:[];
+   if(paragraphs.length||photos.length){
+    const details=el('details',null,'event-overview');
+    details.append(el('summary',paragraphs.length&&photos.length?'Event overview and photographs':photos.length?'Event photographs':'Event overview'));
+    paragraphs.forEach(p=>details.append(el('p',p)));
+    if(photos.length){
+     details.append(el('h4','Glimpses of the event'));
+     const grid=el('div',null,'event-photos');
+     photos.forEach((p,i)=>{
+      if(!safeURL(p.image,{relative:true}))return;
+      const figure=el('figure'),a=link('',p.image,'event-photo-link'),img=el('img');
+      a.setAttribute('aria-label','Open photograph '+(i+1)+' from '+n.title+' (opens in a new tab)');
+      img.src=p.image;img.alt=p.alt||n.title+' photograph '+(i+1);img.loading='lazy';img.decoding='async';
+      a.append(img);figure.append(a,el('figcaption',p.caption||'Photograph '+(i+1)));grid.append(figure);
+     });
+     details.append(grid);
+    }
+    body.append(details);
+   }
+   article.append(body);target.append(article);
+  });
+ }
  function homeUpdate(target,items,kind){if(!target)return;target.replaceChildren();if(!items.length){empty(target,kind==='news'?'Updates coming soon':'No upcoming events listed',kind==='news'?'Research news and announcements will appear here.':'Check the Events tab for the full event archive.');return;}const n=items[0],article=el('article',null,'update');article.append(el('time',n.dateLabel||formatDate(n.date)));const body=el('div');body.append(el('h3',n.title||(kind==='news'&&newsSource(n)==='linkedin'?'LinkedIn post':'Lab update')));if(n.summary)body.append(el('p',n.summary));if(n.venue)body.append(el('p',n.venue));body.append(link(kind==='news'?'Read all news →':'View event details →',kind==='news'?'news.html':'events.html','text-link'));article.append(body);target.append(article);}
  const todayIndia=new Date().toLocaleDateString('en-CA',{timeZone:'Asia/Kolkata'});
  const nextEvents=(data.events||[]).filter(e=>/^\d{4}-\d{2}-\d{2}$/.test(e.date||'')&&(e.endDate||e.date)>=todayIndia).sort((a,b)=>String(a.date).localeCompare(String(b.date)));
  homeUpdate($('[data-home-news]'),sortedNews(data.news||[]),'news');homeUpdate($('[data-home-events]'),nextEvents,'events');
  const newsList=$('#news-list');if(newsList){let source='all';function filterNews(){const term=($('#news-search')?.value||'').trim().toLowerCase(),category=$('#news-category')?.value||'all',all=data.news||[],items=sortedNews(all).filter(n=>(source==='all'||newsSource(n)===source)&&(category==='all'||(n.category||'Announcements')===category)&&[n.title,n.summary,n.category,...(n.tags||[])].join(' ').toLowerCase().includes(term));const count=$('#news-count');if(count)count.textContent=all.length?`${items.length} of ${all.length} news ${all.length===1?'entry':'entries'}`:'News collection being prepared';renderNews(newsList,items,all.length);}$$('[data-news-source]').forEach(b=>b.addEventListener('click',()=>{source=b.dataset.newsSource;$$('[data-news-source]').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));filterNews();}));$('#news-search')?.addEventListener('input',filterNews);$('#news-category')?.addEventListener('change',filterNews);filterNews();}
- const eventList=$('#event-list');if(eventList){const now=new Date();const today=[now.getFullYear(),String(now.getMonth()+1).padStart(2,'0'),String(now.getDate()).padStart(2,'0')].join('-');function eventSubset(key){return sorted(data.events||[]).filter(e=>key==='all'||(key==='upcoming'?(e.endDate||e.date)>=today:(e.endDate||e.date)<today));}updates(eventList,eventSubset('all'),'events');$$('[data-events]').forEach(b=>b.addEventListener('click',()=>{$$('[data-events]').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));updates(eventList,eventSubset(b.dataset.events),'events');}));}
+ const eventList=$('#event-list');if(eventList){const today=todayIndia;function eventSubset(key){return sorted(data.events||[]).filter(e=>key==='all'||(key==='upcoming'?(e.endDate||e.date)>=today:(e.endDate||e.date)<today));}renderEvents(eventList,eventSubset('all'));$$('[data-events]').forEach(b=>b.addEventListener('click',()=>{$$('[data-events]').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));renderEvents(eventList,eventSubset(b.dataset.events));}));}
  const gallery=$('#gallery-list'),dialog=$('#lightbox');if(gallery){function renderGallery(category){gallery.replaceChildren();const items=(data.gallery||[]).filter(i=>category==='all'||i.category===category);if(!items.length){empty(gallery,'Lab photographs coming soon','Photographs of lab activities, events and members will be added to this collection.');return;}const grid=el('div',null,'gallery-grid');items.forEach(g=>{if(!safeURL(g.image,{relative:true}))return;const btn=el('button',null,'gallery-card'),img=el('img');img.src=g.image;img.alt=g.alt||g.caption;img.loading='lazy';btn.append(img,el('span',g.caption));btn.addEventListener('click',()=>{dialog.querySelector('img').src=g.image;dialog.querySelector('img').alt=g.alt||g.caption;dialog.querySelector('p').textContent=g.caption;dialog.showModal();});grid.append(btn);});gallery.append(grid);}$$('[data-gallery]').forEach(b=>b.addEventListener('click',()=>{$$('[data-gallery]').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));renderGallery(b.dataset.gallery);}));dialog.querySelector('.close').addEventListener('click',()=>dialog.close());dialog.addEventListener('click',e=>{if(e.target===dialog)dialog.close();});renderGallery('all');}
  const projects=$('[data-projects]');if(projects){if(!(data.projects||[]).length)empty(projects,'Project details coming soon','Confirmed research project summaries, funding information and collaborators will be listed here.');else(data.projects||[]).forEach(p=>{const a=el('article',null,'callout');a.append(el('h3',p.title),el('p',p.summary));if(p.funder)a.append(el('p',p.funder));projects.append(a);});}
  window.LAB_UTILS={doiURL,citation,bibtex,cloudTerms,wordCloudLayout,linkedinURL,newsSource};

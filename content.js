@@ -1,6 +1,6 @@
 /* Shared ASMD Lab content. Updated using the content editor. */
 window.LAB_CONTENT = {
-  "updated": "2026-10-08",
+  "updated": "2026-10-09",
   "profiles": [
     {
       "name": "Scopus",
@@ -129,7 +129,7 @@ window.LAB_CONTENT = {
         "antimony chalcogenides",
         "bandgap engineering",
         "non-toxic thin-film solar cells",
-        "Sb\u003csub>2\u003c/sub>S\u003csub>3\u003c/sub>/Sb\u003csub>2\u003c/sub>Se\u003csub>3\u003c/sub> double absorber",
+        "Sb<sub>2</sub>S<sub>3</sub>/Sb<sub>2</sub>Se<sub>3</sub> double absorber",
         "SCAPS-1D simulation"
       ],
       "sourceRow": 216
@@ -252,8 +252,8 @@ window.LAB_CONTENT = {
       "authorAffiliation": "Pandey R., Department of Applied Sciences (Physics), National Institute of Technology (NIT), Delhi, 110036, India",
       "url": "https://www.scopus.com/pages/publications/105034319010?origin=resultslist",
       "tags": [
-        "Cs\u003csub>2\u003c/sub>AgGaBr\u003csub>6\u003c/sub>",
-        "Cs\u003csub>2\u003c/sub>AgInBr\u003csub>6\u003c/sub>",
+        "Cs<sub>2</sub>AgGaBr<sub>6</sub>",
+        "Cs<sub>2</sub>AgInBr<sub>6</sub>",
         "ETL and HTL",
         "SCAPS-1D",
         "Underwater"
@@ -277,7 +277,7 @@ window.LAB_CONTENT = {
       "authorAffiliation": "Pandey R., Department of Applied Sciences (Physics), National Institute of Technology (NIT), Delhi, 110036, India",
       "url": "https://www.scopus.com/pages/publications/105044425401?origin=resultslist",
       "tags": [
-        "Cs\u003csub>2\u003c/sub>TiF\u003csub>6\u003c/sub>",
+        "Cs<sub>2</sub>TiF<sub>6</sub>",
         "Dion-Jacobson",
         "SCAPS-1D",
         "Underwater"
@@ -301,7 +301,7 @@ window.LAB_CONTENT = {
       "authorAffiliation": "Pandey R., Department of Applied Sciences (Physics), National Institute of Technology Delhi, New Delhi, India",
       "url": "https://www.scopus.com/pages/publications/105046587558?origin=resultslist",
       "tags": [
-        "(i-CsGeI\u003csub>3\u003c/sub>)",
+        "(i-CsGeI<sub>3</sub>)",
         "intrinsic absorber layer",
         "PSC",
         "SCAPS-1D",
@@ -355,9 +355,9 @@ window.LAB_CONTENT = {
       "tags": [
         "carboost",
         "double absorber efficiency optimisation",
-        "FASnI\u003csub>3\u003c/sub>",
+        "FASnI<sub>3</sub>",
         "machine learning",
-        "MASnI\u003csub>3\u003c/sub>",
+        "MASnI<sub>3</sub>",
         "perovskite solar cell",
         "random forest",
         "supported vector regression",
@@ -384,7 +384,7 @@ window.LAB_CONTENT = {
       "tags": [
         "Albedo effect",
         "Bifacial solar cells",
-        "KGeCl\u003csub>3\u003c/sub>",
+        "KGeCl<sub>3</sub>",
         "PCE and Nyquist"
       ],
       "sourceRow": 105
@@ -434,7 +434,7 @@ window.LAB_CONTENT = {
       "tags": [
         "EIS analysis",
         "Interface defects",
-        "MoX\u003csub>2\u003c/sub> solar cells",
+        "MoX<sub>2</sub> solar cells",
         "Photovoltaic performance",
         "SCAPS-1D simulation"
       ],
@@ -482,7 +482,7 @@ window.LAB_CONTENT = {
       "authorAffiliation": "Pandey R., National Institute of Technology Delhi, Department of Applied Sciences (Physics), Delhi, 110036, India",
       "url": "https://www.scopus.com/pages/publications/105039327176?origin=resultslist",
       "tags": [
-        "Cs\u003csub>2\u003c/sub>AlBiCl\u003csub>6\u003c/sub>",
+        "Cs<sub>2</sub>AlBiCl<sub>6</sub>",
         "current-density characteristics (J-V)",
         "double perovskite material",
         "perovskite solar cell (PSC)",
@@ -536,7 +536,7 @@ window.LAB_CONTENT = {
         "Grading",
         "Group IV",
         "Si",
-        "Si\u003csub>(1-x)\u003c/sub>Ge\u003csub>(x)\u003c/sub>",
+        "Si<sub>(1-x)</sub>Ge<sub>(x)</sub>",
         "Solar cells"
       ],
       "sourceRow": 273
@@ -558,8 +558,8 @@ window.LAB_CONTENT = {
       "authorAffiliation": "Pandey R., Department of Applied Sciences (Physics), National Institute of Technology Delhi, Delhi, India",
       "url": "https://www.scopus.com/pages/publications/105041294105?origin=resultslist",
       "tags": [
-        "Cs\u003csub>2\u003c/sub>CuBiCl\u003csub>6\u003c/sub>",
-        "Cs\u003csub>2\u003c/sub>TiI\u003csub>6\u003c/sub>",
+        "Cs<sub>2</sub>CuBiCl<sub>6</sub>",
+        "Cs<sub>2</sub>TiI<sub>6</sub>",
         "ETL and HTL",
         "SCAPS-1D",
         "underwater"
@@ -659,7 +659,7 @@ window.LAB_CONTENT = {
       "url": "https://www.scopus.com/pages/publications/105027728448?origin=resultslist",
       "tags": [
         "Auger recombination",
-        "Group 4,Si\u003csub>1-x-y\u003c/sub>Ge\u003csub>y\u003c/sub>Sn\u003csub>x\u003c/sub>",
+        "Group 4,Si<sub>1-x-y</sub>Ge<sub>y</sub>Sn<sub>x</sub>",
         "Radiative recombination",
         "Series resistance",
         "Shunt resistance"
@@ -683,7 +683,7 @@ window.LAB_CONTENT = {
       "authorAffiliation": "Pandey R., Department of Applied Sciences (Physics), National Institute of Technology Delhi, Delhi, India",
       "url": "https://www.scopus.com/pages/publications/105044015691?origin=resultslist",
       "tags": [
-        "Ba(Zr, Ti)S\u003csub>3\u003c/sub> absorber",
+        "Ba(Zr, Ti)S<sub>3</sub> absorber",
         "bandgap grading",
         "bowing factor variation",
         "double absorber architecture",
@@ -760,7 +760,7 @@ window.LAB_CONTENT = {
       "url": "https://www.scopus.com/pages/publications/105040581247?origin=resultslist",
       "tags": [
         "2D Perovskites",
-        "MgF\u003csub>2\u003c/sub>",
+        "MgF<sub>2</sub>",
         "Optical Loss Reduction",
         "Perovskite Solar Cells",
         "Texturing"
@@ -784,8 +784,8 @@ window.LAB_CONTENT = {
       "authorAffiliation": "Pandey R., Department of Applied Sciences (Physics), National Institute of Technology Delhi, New Delhi, 110036, India",
       "url": "https://www.scopus.com/pages/publications/105014817544?origin=resultslist",
       "tags": [
-        "FA\u003csub>0.7\u003c/sub>MA\u003csub>0.3\u003c/sub>Pb\u003csub>0.5\u003c/sub>Sn\u003csub>0.5\u003c/sub>I\u003csub>3\u003c/sub>, FA\u003csub>0.7\u003c/sub>Cs\u003csub>0.3\u003c/sub>Pb(I\u003csub>0.85\u003c/sub>Br\u003csub>0.14\u003c/sub>)\u003csub>3\u003c/sub>, SCAPS-1D",
-        "FA\u003csub>0.8\u003c/sub>Cs\u003csub>0.2\u003c/sub>Pb(I\u003csub>0.6\u003c/sub>Br\u003csub>0.4\u003c/sub>)\u003csub>3\u003c/sub>",
+        "FA<sub>0.7</sub>MA<sub>0.3</sub>Pb<sub>0.5</sub>Sn<sub>0.5</sub>I<sub>3</sub>, FA<sub>0.7</sub>Cs<sub>0.3</sub>Pb(I<sub>0.85</sub>Br<sub>0.14</sub>)<sub>3</sub>, SCAPS-1D",
+        "FA<sub>0.8</sub>Cs<sub>0.2</sub>Pb(I<sub>0.6</sub>Br<sub>0.4</sub>)<sub>3</sub>",
         "Tandem solar cell"
       ],
       "sourceRow": 55
@@ -980,13 +980,13 @@ window.LAB_CONTENT = {
       "url": "https://www.scopus.com/pages/publications/105009000063?origin=resultslist",
       "tags": [
         "Composition",
-        "Cu\u003csub>2\u003c/sub>O",
+        "Cu<sub>2</sub>O",
         "Group IV",
         "PCE",
-        "Si\u003csub>1-x-y\u003c/sub>Ge\u003csub>y\u003c/sub>Sn\u003csub>x\u003c/sub>",
+        "Si<sub>1-x-y</sub>Ge<sub>y</sub>Sn<sub>x</sub>",
         "Solar cell",
         "Ternary alloy",
-        "WS\u003csub>2\u003c/sub>"
+        "WS<sub>2</sub>"
       ],
       "sourceRow": 256
     },
@@ -1085,10 +1085,10 @@ window.LAB_CONTENT = {
         "BSF",
         "Chalcogenide",
         "Double absorber",
-        "Sb\u003csub>2\u003c/sub>S\u003csub>3\u003c/sub>",
-        "Sb\u003csub>2\u003c/sub>Se\u003csub>3\u003c/sub>",
-        "WS\u003csub>2\u003c/sub>",
-        "WSe\u003csub>2\u003c/sub>"
+        "Sb<sub>2</sub>S<sub>3</sub>",
+        "Sb<sub>2</sub>Se<sub>3</sub>",
+        "WS<sub>2</sub>",
+        "WSe<sub>2</sub>"
       ],
       "sourceRow": 5
     },
@@ -1258,9 +1258,9 @@ window.LAB_CONTENT = {
       "url": "https://www.scopus.com/pages/publications/105002563996?origin=resultslist",
       "tags": [
         "Double absorber solar cell",
-        "FASnI\u003csub>3\u003c/sub>",
+        "FASnI<sub>3</sub>",
         "Lead-free perovskites",
-        "MASnI\u003csub>3\u003c/sub>",
+        "MASnI<sub>3</sub>",
         "Photovoltaic efficiency optimization"
       ],
       "sourceRow": 83
@@ -1447,7 +1447,94 @@ window.LAB_CONTENT = {
       "displayOrder": -1
     }
   ],
-  "events": [],
+  "events": [
+    {
+      "id": "photovoltaic-workshop-2026",
+      "title": "International Workshop on Exploring Photovoltaic Devices: Expert Talks & Hands-On Simulations",
+      "category": "International Workshop",
+      "date": "2026-02-09",
+      "endDate": "2026-02-14",
+      "dateLabel": "09–14 February 2026",
+      "venue": "NIT Delhi",
+      "coordinators": "Dr. Rikmantra Basu (ECE) and Dr. Rahul Pandey (AS&HM)",
+      "organizedBy": "ECE and AS&HM Departments, NIT Delhi",
+      "summary": "A blended-mode workshop connecting photovoltaic device theory with expert lectures and hands-on simulation training.",
+      "overview": [
+        "The Department of ECE and AS&HM (Physics), NIT Delhi, organised the International Workshop on “Exploring Photovoltaic Devices: Expert Talks & Hands-On Simulations” from 9–14 February 2026 in blended mode.",
+        "The workshop connected theoretical knowledge with practical photovoltaic device simulation through expert lectures and hands-on training. It also included short oral presentations for young researchers, PhD scholars and master’s students.",
+        "The workshop conveners were Dr. Rikmantra Basu and Dr. Rahul Pandey."
+      ],
+      "url": "https://dp.nitdelhi.ac.in/uploads/events/1791185710926-8305301.pdf",
+      "urlLabel": "Download event brochure ↗",
+      "image": "https://dp.nitdelhi.ac.in/uploads/events/1791185710849-963687904.jpeg",
+      "imageAlt": "Poster for Exploring Photovoltaic Devices, 9–14 February 2026",
+      "photos": [
+        {
+          "image": "https://dp.nitdelhi.ac.in/uploads/events/1791185711285-961941363.jpg",
+          "alt": "Photovoltaic devices workshop at NIT Delhi, photograph 1",
+          "caption": "Photovoltaic devices workshop · Photograph 1"
+        },
+        {
+          "image": "https://dp.nitdelhi.ac.in/uploads/events/1791185712675-71966636.jpg",
+          "alt": "Photovoltaic devices workshop at NIT Delhi, photograph 2",
+          "caption": "Photovoltaic devices workshop · Photograph 2"
+        },
+        {
+          "image": "https://dp.nitdelhi.ac.in/uploads/events/1791185714983-779159682.jpg",
+          "alt": "Photovoltaic devices workshop at NIT Delhi, photograph 3",
+          "caption": "Photovoltaic devices workshop · Photograph 3"
+        },
+        {
+          "image": "https://dp.nitdelhi.ac.in/uploads/events/1791185716717-442857938.jpg",
+          "alt": "Photovoltaic devices workshop at NIT Delhi, photograph 4",
+          "caption": "Photovoltaic devices workshop · Photograph 4"
+        }
+      ]
+    },
+    {
+      "id": "sram-atomistic-workshop-2026",
+      "title": "High-Speed SRAM & Atomistic Nanoelectronic Simulation using Cadence Virtuoso and QuantumATK",
+      "category": "Hands-on Workshop",
+      "date": "2026-08-27",
+      "endDate": "2026-08-28",
+      "dateLabel": "27–28 August 2026",
+      "venue": "NIT Delhi",
+      "coordinators": "Dr. Rikmantra Basu (ECE) and Dr. Rahul Pandey (AS&HM)",
+      "organizedBy": "AS&HM (Physics) and ECE Departments, NIT Delhi",
+      "summary": "A two-day hands-on workshop on materials, device and circuit simulations using Cadence Virtuoso and QuantumATK, attended by more than 130 participants.",
+      "overview": [
+        "The Department of Applied Sciences, Humanities and Management (AS&HM) and the Department of Electronics and Communication Engineering (ECE) at NIT Delhi jointly conducted this two-day hands-on workshop on 27–28 August 2026 in collaboration with Maharishi Markandeshwar Engineering College, Mullana.",
+        "The workshop attracted more than 130 participants and provided practical exposure to materials, device and circuit simulations using Cadence Virtuoso and QuantumATK.",
+        "Expert sessions were delivered by Dr. Ashish Sachdeva of Maharishi Markandeshwar Engineering College, M.M. (Deemed to be University), Mullana, Ambala, and Mr. Deepak Upadhyay, Principal Application Engineer at Integrated Microsystem, Gurugram, Haryana. Participants, volunteers and staff members supported the workshop."
+      ],
+      "url": "https://dp.nitdelhi.ac.in/uploads/events/1791185481693-764849270.pdf",
+      "urlLabel": "Download event brochure ↗",
+      "image": "https://dp.nitdelhi.ac.in/uploads/events/1791185480141-797759605.png",
+      "imageAlt": "Poster for High-Speed SRAM and Atomistic Nanoelectronic Simulation, 27–28 August 2026",
+      "photos": [
+        {
+          "image": "https://dp.nitdelhi.ac.in/uploads/events/1791185483731-894178738.jpg",
+          "alt": "SRAM and atomistic nanoelectronic simulation workshop at NIT Delhi, photograph 1",
+          "caption": "SRAM and atomistic simulation workshop · Photograph 1"
+        },
+        {
+          "image": "https://dp.nitdelhi.ac.in/uploads/events/1791185487036-980499132.jpg",
+          "alt": "SRAM and atomistic nanoelectronic simulation workshop at NIT Delhi, photograph 2",
+          "caption": "SRAM and atomistic simulation workshop · Photograph 2"
+        },
+        {
+          "image": "https://dp.nitdelhi.ac.in/uploads/events/1791185489431-891438601.jpg",
+          "alt": "SRAM and atomistic nanoelectronic simulation workshop at NIT Delhi, photograph 3",
+          "caption": "SRAM and atomistic simulation workshop · Photograph 3"
+        },
+        {
+          "image": "https://dp.nitdelhi.ac.in/uploads/events/1791185492531-115418793.jpeg",
+          "alt": "SRAM and atomistic nanoelectronic simulation workshop at NIT Delhi, photograph 4",
+          "caption": "SRAM and atomistic simulation workshop · Photograph 4"
+        }
+      ]
+    }
+  ],
   "gallery": [],
   "projects": [],
   "publicationImport": {
