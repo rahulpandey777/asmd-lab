@@ -1,5 +1,5 @@
 # ASMD Lab website
 
 Advanced Semiconductor Materials and Devices Laboratory, NIT Delhi.
-Lab In-charge: Dr. Rahul Pandey, Assistant Professor, Department of Applied Sciences (Physics).
+Faculty: Dr. Rahul Pandey (Applied Sciences, Physics) and Dr. Rikmantra Basu (Electronics and Communication Engineering).
 
